@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://oxygenos.oneplus.net/OnePlus7Oxygen_13.W.39_OTA_039_all_2007030029_72b59091e8de4a2e.zip
+  ROM_URL: http://download.h2os.com/OnePlus7/OBT/OnePlus7Hydrogen_13.X.39_OTA_039_all_2007030032_29ec276e10f04874.zip
   ROM_NAME: OxygenOS
   ZIP_NAME: OxygenOS
   TZ: Asia/Kolkata
