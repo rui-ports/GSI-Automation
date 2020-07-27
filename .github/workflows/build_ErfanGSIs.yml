@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/ZenUI%206%20-%20July%20update%20Port.zip
-  ROM_NAME: ZenUI
-  ZIP_NAME: ZenUI
+  ROM_URL: https://oxygenos.oneplus.net/OnePlus7Oxygen_13.W.39_OTA_039_all_2007030029_72b59091e8de4a2e.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
