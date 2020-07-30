@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7/OBT/OnePlus7Hydrogen_13.X.39_OTA_039_all_2007030032_29ec276e10f04874.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS
+  ROM_URL: http://tdrive.manofuranium.workers.dev/RROS-Q-8.4.9-20200727-guacamole-Official.zip
+  ROM_NAME: Generic:ResurrectionRemix
+  ZIP_NAME: ResurrectionRemix
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
