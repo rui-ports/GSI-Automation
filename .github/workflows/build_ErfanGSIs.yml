@@ -18,7 +18,7 @@ env:
   ROM_NAME: RogUI
   ZIP_NAME: RogUI
   TZ: Asia/Kolkata
-  MIR: bit
+  MIR: gof
 jobs:
   build:
     runs-on: ubuntu-latest
