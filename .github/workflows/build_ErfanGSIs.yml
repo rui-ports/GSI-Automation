@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1917/CPH1917EX_11_OTA_0090_all_uIDkeCiRvgww.ozip
-  ROM_NAME: ColorOS
-  ZIP_NAME: ColorOS
+  ROM_URL: https://dlcdnets.asus.com/pub/ASUS/ZenFone/ZS660KL/UL-ASUS_I001_1-ASUS-16.0631.1908.21-1.1.3-user.zip?_ga=2.56482987.1492038901.1572965341-225207394.1566223847
+  ROM_NAME: RogUI
+  ZIP_NAME: RogUI
   TZ: Asia/Kolkata
   MIR: bit
 jobs:
