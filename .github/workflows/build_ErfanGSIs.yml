@@ -49,7 +49,7 @@ jobs:
 
        - name: mounting and ish
          run: |
-              zip -r aaaaaaa.zip ErfanGSIs/cache/system.img
+              zip -r aaaaaaa.zip ErfanGSIs/cache
 
        - name: upppp
          run: |
