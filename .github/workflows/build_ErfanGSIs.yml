@@ -33,6 +33,8 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk wget
             sudo apt-get update
             sudo apt-get install p7zip-full
+            sudo -E apt-get install expect
+            sudo apt update 2>/dev/null | grep packages
 
        
        - name: Clone ErfanGSI Source Code
@@ -47,12 +49,9 @@ jobs:
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
 
-       - name: mounting and ish
-         run: |
-              zip -r aaaaaaa.zip ErfanGSIs/cache
-
        - name: upppp
          run: |
+              cd ErfanGSIs/output
               expect -c "
               spawn sftp ruiii@frs.sourceforge.net
               expect \"yes/no\"
@@ -62,7 +61,7 @@ jobs:
               expect \"sftp> \"
               send \"cd /home/pfs/project/rui-ports/dumps\r\"
               set timeout -1
-              send \"put aaaaaaa.zip\r\"
+              send \"put *AB*.img\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
