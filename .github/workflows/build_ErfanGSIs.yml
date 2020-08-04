@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/V12.0.0.2.QFGINXM/miui_LAVENDERINGlobal_V12.0.0.2.QFGINXM_be29e26ec3_10.0.zip
-  ROM_NAME: MIUI
-  ZIP_NAME: MIUI
+  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_21.O.12_GLO_012_1907050210/OnePlus7ProOxygen_21.O.12_OTA_012_all_1907050210_573f8fa.zip
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxygenOS
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
