@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_21.O.12_GLO_012_1907050210/OnePlus7ProOxygen_21.O.12_OTA_012_all_1907050210_573f8fa.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/system.zip
   ROM_NAME: OxygenOS
   ZIP_NAME: OxygenOS
   TZ: Asia/Kolkata
