@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/system.zip
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_14.P.28_GLO_028_2007240028/OnePlus7Oxygen_14.P.28_OTA_028_all_2007240028_aa8bac05a1f507.zip
   ROM_NAME: OxygenOS
   ZIP_NAME: OxygenOS
   TZ: Asia/Kolkata
@@ -46,6 +46,28 @@ jobs:
        
        - name: Download Stock Rom & Generate GSI
          run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+
+       - name: mounting and ish
+         run: |
+              zip -r aaaaaaa.zip ErfanGSIs/cache/system.img
+
+       - name: upppp
+         run: |
+              expect -c "
+              spawn sftp ruiii@frs.sourceforge.net
+              expect \"yes/no\"
+              send \"yes\r\"
+              expect \"Password\"
+              send \"${{ secrets.PASSWORD }}\r\"
+              expect \"sftp> \"
+              send \"cd /home/pfs/project/rui-ports/dumps\r\"
+              set timeout -1
+              send \"put aaaaaaa.zip\r\"
+              expect \"Uploading\"
+              expect \"100%\"
+              expect \"sftp>\"
+              send \"bye\r\"
+              interact"
        
        - name: Zip Aonly and upload 
          run: |
