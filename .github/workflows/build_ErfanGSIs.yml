@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7Oxygen/OnePlus7Oxygen_14.P.28_GLO_028_2007240028/OnePlus7Oxygen_14.P.28_OTA_028_all_2007240028_aa8bac05a1f507.zip
+  ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_21.P.28_GLO_028_2007240027/OnePlus7ProOxygen_21.P.28_OTA_028_all_2007240027_b336a0d372f0008.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS
+  ZIP_NAME: OxygenOS-OP7Pro
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
