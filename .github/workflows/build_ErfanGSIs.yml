@@ -16,7 +16,7 @@ on:
 env:
   ROM_URL: http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus7ProOxygen/OnePlus7ProOxygen_21.P.28_GLO_028_2007240027/OnePlus7ProOxygen_21.P.28_OTA_028_all_2007240027_b336a0d372f0008.zip
   ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-OP7Pro
+  ZIP_NAME: OxygenOS-OP6
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
@@ -52,6 +52,7 @@ jobs:
        - name: upppp
          run: |
               cd ErfanGSIs/output
+              sudo 7z a $ZIP_NAME-AB-10-20200807-ruigsi.7z *-AB-*.img
               expect -c "
               spawn sftp ruiii@frs.sourceforge.net
               expect \"yes/no\"
@@ -61,7 +62,7 @@ jobs:
               expect \"sftp> \"
               send \"cd /home/pfs/project/rui-ports/dumps\r\"
               set timeout -1
-              send \"put *AB*.img\r\"
+              send \"put *AB*.7z\r\"
               expect \"Uploading\"
               expect \"100%\"
               expect \"sftp>\"
