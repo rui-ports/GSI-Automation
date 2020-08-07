@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus6Oxygen/OnePlus6Oxygen_22.J.47_GLO_047_2007191515/OnePlus6Oxygen_22_OTA_047_all_2007191515_d9e52461.zip
-  ROM_NAME: OxygenOS
-  ZIP_NAME: OxygenOS-OP6
+  ROM_URL: http://tdrive.manofuranium.workers.dev/RMX1901_ColorOS6-11.A.17_20190831_ANCIENT-PUBLIC_tulip.zip
+  ROM_NAME: ColorOS
+  ZIP_NAME: ColorOS
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
