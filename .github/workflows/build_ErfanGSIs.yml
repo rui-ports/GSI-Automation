@@ -14,9 +14,9 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/RMX1901_ColorOS6-11.A.17_20190831_ANCIENT-PUBLIC_tulip.zip
+  ROM_URL: http://downloads.oppo.com.s3.amazonaws.com/firmware/CPH1917/CPH1917EX_11_OTA_0090_all_uIDkeCiRvgww.ozip
   ROM_NAME: ColorOS
-  ZIP_NAME: ColorOS
+  ZIP_NAME: ColorOS-Reno
   TZ: Asia/Kolkata
   MIR: gof
 jobs:
